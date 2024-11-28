@@ -1,0 +1,35 @@
+# https://docs.github.com/en/actions
+
+name: "Release"
+
+on: # yamllint disable-line rule:truthy
+    push:
+        tags:
+            - "**"
+
+jobs:
+    release:
+        name: "Release"
+
+        runs-on: "ubuntu-latest"
+
+        timeout-minutes: 5
+
+        steps:
+            - name: "Create release"
+              uses: "basecodeoy/.github/actions/github/release/create@1.0.0"
+              with:
+                  github-token: "${{ secrets.PAT }}"
+
+            - name: "Install git-chglog"
+              run: "wget -c https://github.com/git-chglog/git-chglog/releases/download/v0.15.4/git-chglog_0.15.4_linux_amd64.tar.gz -O - | tar -xz"
+
+            - name: "Generate changelog"
+              run: "./git-chglog -o CHANGELOG.md"
+
+            - name: "Commit"
+              uses: "stefanzweifel/git-auto-commit-action@v4"
+              with:
+                  branch: "main"
+                  commit_message: "RELEASE: Update changelog"
+                  file_pattern: "CHANGELOG.md"

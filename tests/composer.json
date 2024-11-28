@@ -1,0 +1,8 @@
+{
+    "name": "basecodeoy/crate",
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\Crate\\": "src"
+        }
+    }
+}

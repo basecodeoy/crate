@@ -1,0 +1,171 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Crate\\\\Package\\\\AbstractServiceProvider\\:\\:getCommands\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Package/AbstractServiceProvider.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Crate\\\\Package\\\\AbstractServiceProvider\\:\\:getFilesFromDirectory\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Package/AbstractServiceProvider.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Crate\\\\Package\\\\AbstractServiceProvider\\:\\:getMigrations\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Package/AbstractServiceProvider.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Crate\\\\Package\\\\AbstractServiceProvider\\:\\:getPackageManifest\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Package/AbstractServiceProvider.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Crate\\\\Package\\\\AbstractServiceProvider\\:\\:getRoutes\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Package/AbstractServiceProvider.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Crate\\\\Package\\\\AbstractServiceProvider\\:\\:\\$traitInitializers type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Package/AbstractServiceProvider.php
+
+		-
+			message: "#^Variable method call on \\$this\\(BaseCodeOy\\\\Crate\\\\Package\\\\AbstractServiceProvider\\)\\.$#"
+			count: 1
+			path: src/Package/AbstractServiceProvider.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Crate\\\\TestBench\\\\AbstractAnalysisTestCase\\:\\:candidates\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/TestBench/AbstractAnalysisTestCase.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Crate\\\\TestBench\\\\AbstractAnalysisTestCase\\:\\:getIgnored\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/TestBench/AbstractAnalysisTestCase.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Crate\\\\TestBench\\\\AbstractAnalysisTestCase\\:\\:getPaths\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/TestBench/AbstractAnalysisTestCase.php
+
+		-
+			message: "#^Parameter \\#1 \\$path of function dirname expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/TestBench/AbstractAnalysisTestCase.php
+
+		-
+			message: "#^Unsafe call to private method BaseCodeOy\\\\Crate\\\\TestBench\\\\AbstractAnalysisTestCase\\:\\:candidates\\(\\) through static\\:\\:\\.$#"
+			count: 1
+			path: src/TestBench/AbstractAnalysisTestCase.php
+
+		-
+			message: "#^Unsafe call to private method BaseCodeOy\\\\Crate\\\\TestBench\\\\AbstractAnalysisTestCase\\:\\:rootPath\\(\\) through static\\:\\:\\.$#"
+			count: 1
+			path: src/TestBench/AbstractAnalysisTestCase.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Foundation\\\\Application\\:\\:\\$config\\.$#"
+			count: 6
+			path: src/TestBench/AbstractPackageTestCase.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Crate\\\\TestBench\\\\AbstractPackageTestCase\\:\\:getRequiredServiceProviders\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/TestBench/AbstractPackageTestCase.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Crate\\\\TestBench\\\\AbstractPackageTestCase\\:\\:getServiceProviderClass\\(\\) invoked with 1 parameter, 0 required\\.$#"
+			count: 1
+			path: src/TestBench/AbstractPackageTestCase.php
+
+		-
+			message: "#^Call to an undefined method Pest\\\\Expectation\\<mixed\\>\\:\\:toBeSubclassOf\\(\\)\\.$#"
+			count: 2
+			path: src/TestBench/helpers.php
+
+		-
+			message: "#^Call to an undefined method Pest\\\\Expectation\\<mixed\\>\\:\\:toMatchFacadeAccessor\\(\\)\\.$#"
+			count: 1
+			path: src/TestBench/helpers.php
+
+		-
+			message: "#^Call to an undefined method Pest\\\\Expectation\\<mixed\\>\\:\\:toMatchFacadeRoot\\(\\)\\.$#"
+			count: 1
+			path: src/TestBench/helpers.php
+
+		-
+			message: "#^Call to an undefined method Pest\\\\Expectation\\<mixed\\>\\:\\:toMatchFacadeSubclass\\(\\)\\.$#"
+			count: 1
+			path: src/TestBench/helpers.php
+
+		-
+			message: "#^Parameter \\#1 \\$class of method Pest\\\\Mixins\\\\Expectation\\<mixed\\>\\:\\:toBeInstanceOf\\(\\) expects class\\-string, string given\\.$#"
+			count: 1
+			path: src/TestBench/helpers.php
+
+		-
+			message: "#^Parameter \\#1 \\$objectOrClass of class ReflectionClass constructor expects class\\-string\\<T of object\\>\\|T of object, string given\\.$#"
+			count: 1
+			path: src/TestBench/helpers.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 13
+			path: src/TestBench/helpers.php
+
+		-
+			message: "#^Method Tests\\\\Fixtures\\\\BarStub\\:\\:__construct\\(\\) has parameter \\$foo with no type specified\\.$#"
+			count: 1
+			path: tests/Fixtures/BarStub.php
+
+		-
+			message: "#^Method Tests\\\\Fixtures\\\\BarStub\\:\\:getFoo\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/Fixtures/BarStub.php
+
+		-
+			message: "#^Method Tests\\\\Fixtures\\\\FooStub\\:\\:__construct\\(\\) has parameter \\$bar with no type specified\\.$#"
+			count: 1
+			path: tests/Fixtures/FooStub.php
+
+		-
+			message: "#^Method Tests\\\\Fixtures\\\\FooStub\\:\\:getBar\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/Fixtures/FooStub.php
+
+		-
+			message: "#^Method Tests\\\\Fixtures\\\\ServiceProviderStub\\:\\:provides\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: tests/Fixtures/ServiceProviderStub.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Access to an undefined property PHPUnit\\\\Framework\\\\TestCase\\:\\:\\$app\\.$#"
+			count: 1
+			path: tests/Unit/HelpersTest.php
+
+		-
+			message: "#^Call to an undefined method Pest\\\\Expectation\\<string\\|null\\>\\:\\:toBeFacade\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/HelpersTest.php
+
+		-
+			message: "#^Call to an undefined method Pest\\\\Expectation\\<string\\|null\\>\\:\\:toBeFacadeProvider\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/HelpersTest.php
+
+		-
+			message: "#^Call to an undefined method Pest\\\\Expectation\\<string\\|null\\>\\:\\:toBeInjectable\\(\\)\\.$#"
+			count: 2
+			path: tests/Unit/HelpersTest.php
